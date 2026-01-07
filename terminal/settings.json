@@ -1,0 +1,160 @@
+{
+  "$help": "https://aka.ms/terminal-documentation",
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  "actions": [],
+  "alwaysShowTabs": false,
+  "copyFormatting": "none",
+  "copyOnSelect": false,
+  "defaultProfile": "{71160544-14d8-4194-af25-d05feeac7237}",
+  "initialCols": 120,
+  "initialRows": 30,
+  "keybindings": [
+    {
+      "id": "Terminal.CopyToClipboard",
+      "keys": "ctrl+c"
+    },
+    {
+      "id": "Terminal.PasteFromClipboard",
+      "keys": "ctrl+v"
+    },
+    {
+      "id": "Terminal.FindText",
+      "keys": "ctrl+shift+f"
+    },
+    {
+      "id": "Terminal.DuplicatePaneAuto",
+      "keys": "alt+shift+d"
+    }
+  ],
+  "launchMode": "default",
+  "newTabMenu": [
+    {
+      "type": "remainingProfiles"
+    }
+  ],
+  "profiles": {
+    "defaults": {
+      "backgroundImage": null,
+      "backgroundImageOpacity": 1,
+      "colorScheme": "Kanagawa Paper Ink",
+      "font": {
+        "face": "Maple Mono NF",
+        "features": {
+          "cv01": 1,
+          "ss03": 0,
+          "ss05": 0
+        },
+        "size": 10
+      },
+      "intenseTextStyle": "all",
+      "opacity": 100,
+      "padding": "0",
+      "scrollbarState": "hidden",
+      "useAcrylic": false
+    },
+    "list": [
+      {
+        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+        "hidden": false,
+        "name": "Windows PowerShell"
+      },
+      {
+        "commandline": "%SystemRoot%\\System32\\cmd.exe",
+        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "hidden": false,
+        "name": "Command Prompt"
+      },
+      {
+        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+        "hidden": false,
+        "name": "Azure Cloud Shell",
+        "source": "Windows.Terminal.Azure"
+      },
+      {
+        "guid": "{762a97a1-f830-5f69-a000-1824ab4b2997}",
+        "hidden": false,
+        "name": "NixOS",
+        "scrollbarState": "hidden",
+        "source": "Microsoft.WSL"
+      },
+      {
+        "guid": "{d51715c3-dd99-542e-9649-5a6890fef8ef}",
+        "hidden": false,
+        "name": "Developer Command Prompt for VS 18",
+        "source": "Windows.Terminal.VisualStudio"
+      },
+      {
+        "guid": "{9ce3cdca-05b4-58bd-9fbc-7520ff96037f}",
+        "hidden": false,
+        "name": "Developer PowerShell for VS 18",
+        "source": "Windows.Terminal.VisualStudio"
+      },
+      {
+        "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
+        "hidden": true,
+        "name": "Visual Studio Debug Console",
+        "source": "VSDebugConsole"
+      },
+      {
+        "commandline": "wsl.exe -d NixOS bash -c 'tmux new-session -A -s Main powershell.exe'",
+        "guid": "{71160544-14d8-4194-af25-d05feeac7237}",
+        "name": "Tmux Powershell",
+        "startingDirectory": "C:\\share"
+      }
+    ]
+  },
+  "schemes": [
+    {
+      "background": "#141415",
+      "black": "#393836",
+      "blue": "#435965",
+      "brightBlack": "#ACA9A4",
+      "brightBlue": "#698A9B",
+      "brightCyan": "#96ADA7",
+      "brightGreen": "#72A072",
+      "brightPurple": "#B4A7B5",
+      "brightRed": "#CC928E",
+      "brightWhite": "#D5CD9D",
+      "brightYellow": "#D4C196",
+      "cursorColor": "#C4B28A",
+      "cyan": "#8EA49E",
+      "foreground": "#DCD7BA",
+      "green": "#699469",
+      "name": "Kanagawa Paper Ink",
+      "purple": "#A292A3",
+      "red": "#C4746E",
+      "selectionBackground": "#363646",
+      "white": "#C8C093",
+      "yellow": "#C4B28A"
+    },
+    {
+      "background": "#1A1B26",
+      "black": "#15161E",
+      "blue": "#7AA2F7",
+      "brightBlack": "#414868",
+      "brightBlue": "#7AA2F7",
+      "brightCyan": "#7DCFFF",
+      "brightGreen": "#9ECE6A",
+      "brightPurple": "#BB9AF7",
+      "brightRed": "#F7768E",
+      "brightWhite": "#C0CAF5",
+      "brightYellow": "#E0AF68",
+      "cursorColor": "#C0CAF5",
+      "cyan": "#7DCFFF",
+      "foreground": "#C0CAF5",
+      "green": "#9ECE6A",
+      "name": "tokyonight",
+      "purple": "#BB9AF7",
+      "red": "#F7768E",
+      "selectionBackground": "#33467C",
+      "white": "#A9B1D6",
+      "yellow": "#E0AF68"
+    }
+  ],
+  "showTabsInTitlebar": false,
+  "tabWidthMode": "equal",
+  "theme": "system",
+  "themes": [],
+  "useAcrylicInTabRow": false
+}
